@@ -146,35 +146,3 @@ def converterCSVemMatriz(nomeArquivo):
             matriz.append(elementos)
 
     return matriz
-
-#Função Descontinuada
-def printMatriz(matriz):
-    print("% ", end = '')
-    for i in range(len(matriz[0])):
-        print('% ', end = '')
-    print('%')
-
-    for linha in matriz:
-        print("% ", end = '')
-        for vertice in linha:
-            if vertice == 'X':
-                print("# ", end = '')
-            elif vertice == 1:
-                print("R ", end = '')
-            elif vertice == 2:
-                print("Q ", end = '')
-            elif vertice == 0:
-                print("- ", end = '')
-            elif vertice == -1:
-                print("x ", end = '')
-        print("%")
-
-    print("% ", end = '')
-    for i in range(len(matriz[0])):
-        print('% ', end = '')
-    print('%')
-
-#Função Descontinuada
-def ptmtz(matriz):
-    for x in matriz:
-        print(x)
